@@ -17,7 +17,7 @@
 .ourteam {
     margin-top: 10rem;
     text-align: center;
-    border: solid 3px red;
+    /* border: solid 3px red; */
     display: flex;
     flex-direction: column;
 }
