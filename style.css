@@ -1,0 +1,86 @@
+
+/* Initial CSS styling set  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Initial styling setup continued */
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Our Team Section */
+
+.ourteam {
+    margin-top: 10rem;
+    text-align: center;
+    /* border: solid 3px red; */
+    display: flex;
+    flex-direction: column;
+}
+.ourteam--title{
+    font-size: 3.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+.ourteam--content1{  
+    /* border: 2px solid rgb(255, 0, 183); */
+    margin-inline:  auto;
+    padding: 1rem 2em;
+    display: flex;
+    width: 80%;
+   justify-content: space-between;
+   
+}
+
+
+
+.ourteam--pic{
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 1rem 1rem;
+
+    border-radius: 100%; 
+
+}
+
+
+.ourteam--content2{  
+    /* border: 2px solid rgb(255, 0, 183); */
+    margin-inline:  auto;
+    padding: 1rem 2em;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+   
+}
+
+.member-details{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2px rgb(21, 0, 255); */
+    padding: 2.5rem 7em;
+   
+}
+
+.ourteam--name {
+    font-size: 2rem;
+
+}
+.ourteam--about{
+    font-size: 1.5rem;
+
+}
+.ourteam--btn{
+background-color: white;
+color: rgb(8, 7, 7);
+padding: 0.4rem 1rem;
+margin: 1rem 0;
+font-weight: 400;
+width: 100%;
+}
