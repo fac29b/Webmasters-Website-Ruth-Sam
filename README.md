@@ -15,3 +15,17 @@ Changes:
 
 1. Add further styling to Our Team
 2. Create Portfolio Section and styling
+
+4th November: Changes - 
+1. Added Porfolio section using HTML and CSS
+2. Added pictures from projects.
+3. Created column structure using flex-box.
+4. Made improvements to Our Team Section
+5. Added Ruth's button styling to Portfolio Section
+
+5th November: Changes - 
+1. Added more images for projects and background use.
+2. Added project titles.
+3. Create CSS styling for the buttons in 'Our Team' section.
+4. Adjusted margins of various elements. 
+
