@@ -333,3 +333,73 @@ justify-content: center;
 .portfolio--btn .btn{
     
 }
+
+
+
+.h1-contact {
+    
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+.form-container{
+    background-color: #000;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col {
+    display: inline-block;
+    width: 48%; /* Adjust as needed to control the width of the Name and Email fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+   
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+button {
+   
+    border: 1px solid #ea1538;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #ea1538;
+    background-color: #fff;
+}
+
+.center-button{
+
+
+    text-align: center;
+}
