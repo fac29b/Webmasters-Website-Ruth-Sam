@@ -24,5 +24,23 @@ November 2nd:
 1. Added more images for projects and background use.
 2. Added project titles.
 3. Create CSS styling for the buttons in 'Our Team' section.
-4. Adjusted margins of various elements. 
+4. Adjusted margins of various elements.
+
+
+
+
+Ruth’s Note 
+
+
+•	The website wireframe was created by using convo.com. Having a blueprint helps us to visualize the overall structure, content placement, and user interface elements of the website.
+
+•	Sam suggested using semantic HTML such us nav, main, section, and footer instead of div for accessibility and readability purposes.
+
+•	In the header section, the navigation was implemented using the display: flex property. This allowed us to effectively divide it into two distinct sections: the logo and the navbar.
+
+•	The main page features a title, social media icons, a button that leads to the contact page, and a description of our agency.
+
+•	The description text and the social media icons are placed within a flexbox and aligned using the justify-content: space-around property.
+
+
 
