@@ -26,6 +26,11 @@ November 2nd:
 3. Create CSS styling for the buttons in 'Our Team' section.
 4. Adjusted margins of various elements.
 
+7th November: To do Today (Sam) - 
+1.Paste HTML from Ruth into my version. 
+2. Try to create Javascript functionality for burger. 
+3. Add styling for burger. 
+
 
 
 
