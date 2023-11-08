@@ -209,6 +209,8 @@ span{
     display: flex;
     flex-direction: column;
     background-color: #303030;
+    background-color: lavender;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
 }
 .ourteam--title{
     font-size: 3.5rem;
@@ -269,8 +271,10 @@ span{
     font-size: 1.5rem;
     max-width: 40ch;
     color: white;
+    margin-bottom: 1rem;
 
 }
+
 .ourteam--btn{
 
     border: 1px solid #ea1538;
@@ -283,6 +287,79 @@ span{
     transition: 0.8s;
     border-radius: 10px;
 
+=======
+/* .ourteam--btn{
+background-color: white;
+color: rgb(8, 7, 7);
+padding: 0.4rem 1rem;
+margin-top: 1rem;
+font-weight: 400;
+margin-left: auto;
+margin: auto;
+cursor: pointer;
+} */
+
+.glow-on-hover {
+    margin-left: auto;
+margin: auto;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+
 }
 
 /* Portfolio Section */
@@ -292,6 +369,9 @@ span{
     text-align: center;
     background-color: #303030;
     color: white;
+    background-color: lavender;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
+    
     
 }
 .portfolio--title{
@@ -300,6 +380,7 @@ span{
     letter-spacing: 0.05em;
     line-height: 1;
     padding-top: 3rem;
+  
 
 }
 .portfolio--description{
@@ -315,10 +396,17 @@ flex-wrap: wrap;
 justify-content: center;
 
 }
+.col{
+    flex-basis: 50%;
+    transition: transform 0.5s;
+}
+.col:hover{
+    transform: translateX(15px);
+}
 .portfolio--box{
     color: rgb(255, 255, 255);
     /* background-color: rgb(104, 86, 86); */
-    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1));
+    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(104, 99, 99, 0));
     padding: 2.5rem;
     border-radius: 20px;
     flex: 1;
@@ -327,11 +415,13 @@ justify-content: center;
     margin-left: 2rem;
     margin-right: 2rem;
     max-width:600px;
+    transition: transform 1s;
  
    
 }
 .portfolio--box-name{
     font-size: 2rem;
+    margin-bottom: 0.6rem;
 }
 .portfolio--box-picture{
     width: 220px; 
@@ -341,11 +431,13 @@ justify-content: center;
     border-radius: 10%;
     margin-inline: auto;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 .portfolio--box-info{
     margin-inline: auto;
     font-size: 1rem;
     max-width: 29ch;
+    margin-bottom: 0.5rem;
 
 }
 .portfolio--btn .btn{
