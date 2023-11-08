@@ -212,6 +212,16 @@ span{
     background-color: lavender;
     background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
 }
+/* 1260px width Change our team elements to stack.  */
+
+/* @media (max-width: 1260px) {
+ 
+    .ourteam--content1{
+      display: inline;
+    }
+}; */
+
+
 .ourteam--title{
     font-size: 3.5rem;
     letter-spacing: 0.05em;
@@ -230,19 +240,17 @@ span{
    
 }
 
-
-
 .ourteam--pic{
     width: 220px; 
     height: 220px; 
     object-fit: cover;
-   
     border: 3px solid rgb(255, 255, 255);
     margin: 1rem 1rem;
     border-radius: 100%; 
+    justify-content: center;
+   
 
 }
-
 
 .ourteam--content2{  
     /* border: 2px solid rgb(255, 0, 183); */
@@ -285,10 +293,10 @@ span{
     margin: 10px;
     cursor: pointer;
     transition: 0.8s;
-    border-radius: 10px;
+    border-radius: 10px;}
 
-=======
-/* .ourteam--btn{
+
+.ourteam--btn{
 background-color: white;
 color: rgb(8, 7, 7);
 padding: 0.4rem 1rem;
@@ -297,7 +305,7 @@ font-weight: 400;
 margin-left: auto;
 margin: auto;
 cursor: pointer;
-} */
+}
 
 .glow-on-hover {
     margin-left: auto;
@@ -362,6 +370,17 @@ margin: auto;
 
 }
 
+@media (max-width: 1200px) {
+    .ourteam--content1,
+    .ourteam--content2 {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .ourteam--pic {
+      margin: 1rem auto;
+    }
+  }
 /* Portfolio Section */
 
 .portfolio{
@@ -440,9 +459,7 @@ justify-content: center;
     margin-bottom: 0.5rem;
 
 }
-.portfolio--btn .btn{
-    
-}
+
 
 
 
@@ -680,11 +697,7 @@ button:hover{
     padding: 25px;
 
 }
-
-
-
-
-
-
-    
+ 
 }
+
+/* 1260px width Change our team elements to stack.  */

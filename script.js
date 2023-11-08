@@ -11,4 +11,5 @@ hambergerElement.addEventListener('click', ()=>{
 navElement.addEventListener('click', ()=>{
     navElement.classList.remove('nav-open')
     hambergerElement.remove('hamburger-open')
+    
 })
