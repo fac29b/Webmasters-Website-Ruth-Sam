@@ -34,7 +34,7 @@ November 2nd:
 8th November:
 Ruth pushed her changes that added responsive design to almost the whole site. She had also added the hamburger, styling and JS functionality. 
 1. I realized that the hamburger would disappear after clicking a link on the hamburger nav bar. This was a small fix that changed the JS to add ClassList.
-2. I added responsive design using media queries to the our team section. Now when a max-width of 1200 px is reached, the elements stack and behave much like the porfolio section does below. 
+2. I added responsive design using media queries to the our team section. Now when a max-width of 1200 px is reached, the elements stack and behave much like the porfolio section does below. For this I used: flex-direction: column; & align-items: center;. The parent div already assigned them as flex so they adhere to the behaviour. 
 
 
 
