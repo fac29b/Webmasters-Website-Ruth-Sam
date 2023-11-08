@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,23 +9,36 @@
     <title>Project 1 Sam & Ruth</title>
   </head>
   <body>
-  <div class="wrapper">
+  <div class="wrapper" id="index">
 
-      <nav class="navigation">
-          <a href="#index"><p class="logo">Web<span>Masters</span></p></a>
-          <ul>
-              <li><a href="#index">Home</a></li>
-              <li><a href="#ourteam">Our Team</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
+    <header class="header" >
+      <div class="header-content">
+      <a href="#index"><p class="logo">Web<span>Masters</span></p></a>
 
-      </nav>
+      <nav class="nav">
+      <ul class="nav-list">
+          <li class="nav-item"><a href="#index" class =  'nav-link'>Home</a></li>
+          <li class="nav-item"><a href="#ourteam" class =  'nav-link'>Our Team</a></li>
+          <li class="nav-item"><a href="#portfolio" class =  'nav-link'>Portfolio</a></li>
+          <li class="nav-item"><a href="#contact" class =  'nav-link'>Contact</a></li>
+      </ul>
+  </nav>
+
+      <div class="hamburger">
+
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      </header>
+
+     
 
 
-      <section class="home" id="index">
+      <section class="home" >
 
-          <h1>
+          <h1 class="home-h1">
               Turning Your Visions into Online Realities
           </h1>
           <main class="home-content">
@@ -39,14 +53,14 @@
 
               <div class="social-bar">
 
-                  <div class="button">
+                  <div class="social-button">
                       <div class="icon">
                           <i class="fa fa-linkedin"></i>
                       </div>
 
                   </div>
 
-                  <div class="button">
+                  <div class="social-button">
                       <div class="icon">
                           <i class="fa fa-twitter"></i>
                       </div>
@@ -54,16 +68,16 @@
                   </div>
 
 
-                  <div class="button">
+                  <div class="social-button">
                       <div class="icon">
-                          <a href="https://www.facebook.com/ruth.tamiru.1"><i class="fa fa-facebook"></i></a>
+                          <a href="https://www.facebook.com/ruth.tamiru.1" class="icon-link"><i class="fa fa-facebook"></i></a>
                       </div>
 
                   </div>
               </div>
           </main>
 
-          <div class="buttons">
+          <div class="button-contact">
               <a href="#contact"><button class="btn">Contact us</button></a>
 
               
@@ -103,7 +117,7 @@
     </section>
 
     <!-- portfolio section -->
-<section class="portfolio container">
+<section class="portfolio container" id="portfolio">
  <h2 class="portfolio--title">Portfolio</h2>
  <p class="portfolio--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta alias incidunt dolorem fugiat, sint veniam aliquam ut repellendus ullam eum nesciunt? Quos laborum autem consequatur perspiciatis! Ullam pariatur temporibus earum.</p>
  <div class="portfolio--container">
@@ -156,7 +170,7 @@
               <textarea id="message" name="message" rows="4" required></textarea>
           </div>
           <div class="row center-button">
-              <button type="submit">Submit</button>
+              <button type="submit" class="form-button">Submit</button>
           </div>
       </form>
   </section>
