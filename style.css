@@ -16,7 +16,7 @@
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 ul{
@@ -27,7 +27,7 @@ ul{
 .wrapper{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./image/backg1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./image/backgroundblue.jpeg);
     background-size:cover;
     background-position: center;
     padding-top: 60px;
@@ -42,7 +42,7 @@ ul{
 .header{
 
     min-height: 60px;
-    background-color: #000;
+    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -74,16 +74,16 @@ ul{
 }
 
 .nav-link:hover{
-    color: #b84c5e;
+    color: #00aeff;;
 }
 
 .logo{
-    color: #fff;
+    color: #0b0b0c;
     font-weight: 700;
     font-size: 2rem;
 }
 span{
-    color: #b84c5e
+    color: #00aeff;
 }
 
     .icon-link{
@@ -160,7 +160,7 @@ span{
    margin: 8% ;
     color: #fff;
 
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 2px 2px #00aeff;
     
 }
 
@@ -178,7 +178,7 @@ span{
 
 /*contact button*/
 .btn{
-    border: 1px solid #ea1538;
+    border: 1px solid #dcdceb;
     background: none;
     font-size: 20px;
     color: #fff;
@@ -191,7 +191,7 @@ span{
     
 }
 .btn:hover{
-    color: #ea1538;
+    color: #00aeff;
     background-color: #fff;
 }
 
@@ -471,7 +471,8 @@ justify-content: center;
     padding: 20px;
 }
 .form-container{
-    background-color: #333;
+
+    background-color: #04557b;;
 }
 .contact-form {
     max-width: 600px;
@@ -502,17 +503,17 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 5px;
-    border: 1px solid #df2828;
+    border: 1px solid #00aeff;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #93959b;
+    background-color: #e3e4ea;
     
 }
 
 
 .form-button {
    
-    border: 1px solid #ea1538;
+    border: 1px solid #00aeff;;
     background: none;
     font-size: 20px;
     color: #fff;
@@ -525,7 +526,7 @@ textarea {
 }
 
 button:hover{
-    color: #ea1538;
+    color: #00aeff;;
     background-color: #fff;
 }
 
@@ -544,7 +545,7 @@ button:hover{
 .bar{
     height: 2px;
     width: 28px;
-    background-color: #fff;
+    background-color: #000;
     margin: 5px 0;
 }
 .nav-open{
@@ -570,7 +571,7 @@ button:hover{
         position: fixed;
         top: 60px;
         left: 0;
-        background-color: #0a0909;
+        background-color: #e2dcdc;
         width: 100%;
         padding: 10px 0 25px;
         transform: translateX(-100%);
