@@ -26,11 +26,15 @@ November 2nd:
 3. Create CSS styling for the buttons in 'Our Team' section.
 4. Adjusted margins of various elements.
 
-7th November: To do Today (Sam) - 
+7th November:  - 
 1.Paste HTML from Ruth into my version. 
 2. Try to create Javascript functionality for burger. 
 3. Add styling for burger. 
 
+8th November:
+Ruth pushed her changes that added responsive design to almost the whole site. She had also added the hamburger, styling and JS functionality. 
+1. I realized that the hamburger would disappear after clicking a link on the hamburger nav bar. This was a small fix that changed the JS to add ClassList.
+2. I added responsive design using media queries to the our team section. Now when a max-width of 1200 px is reached, the elements stack and behave much like the porfolio section does below. 
 
 
 
