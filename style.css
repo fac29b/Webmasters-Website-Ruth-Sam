@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(0, 115, 255);
+}
+/* Initial styling setup continued */
+*{
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -27,8 +34,13 @@ ul {
 }
 
 
-.header {
-    min-height: 60px;
+
+
+
+.header{
+
+    min-height: 50px;
+
     background-color: #fff;
     border: 1px solid red;
     position: fixed;
@@ -151,25 +163,35 @@ span{
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+
+    margin: 6% ;
+
     padding-top: 5rem;
    margin-top: 1rem;
    margin-bottom: 1rem;
+
     color: #fff;
   text-shadow: 2px 2px #00aeff;
     
 }
 
 .home-p{
+
+    width: 600px;
+    color: #fff;
+    font-size: 1.4rem;
+
     /* width: 600px; */
     max-width: 60ch;
     color: #fff;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+   
     text-align: center;
     /* margin-inline: auto; */
     margin-left: 7rem;
     margin-right: 1rem;
+
     }
 
    
@@ -473,59 +495,85 @@ justify-content: center;
 }
 .form-container{
 
-    background-color: #04557b;;
+background-color: #fce055;
+background-image: linear-gradient(319deg, #b8a071 0%, #256eff 37%, #000517 100%);
+
 }
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    width: 90%;
 }
 
-.row {
-    margin-bottom: 20px;
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.col {
-    display: inline-block;
-    width: 49.5%; /* Adjust as needed to control the width of the Name and Email fields */
+
+
+
+input,
+textarea {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+    outline: 0;
+    color: #fff;
+    
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
+
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
     color: #fff;
+    cursor: text;
+    transition: 0.2s ease-out;
    
 }
 
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #00aeff;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #e3e4ea;
-    
-}
 
 
 .form-button {
    
-    border: 1px solid #00aeff;;
-    background: none;
+    border: 1px solid #fff;;
     font-size: 20px;
     color: #fff;
-    padding: 20px 30px;
-    margin: 10px;
+    padding: 10px 0;
     cursor: pointer;
-    transition: 0.8s;
-    border-radius: 10px;
-    cursor: pointer;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    transition: 0.4s;
 }
 
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top:-35px;
+    font-size: 14px;
+  }
+
+  .form-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-row .input-group{
+    flex-basis: 48%;
+
+  }
 button:hover{
     color: #00aeff;;
     background-color: #fff;

@@ -159,26 +159,38 @@
 
 
 </section>
-     <!--Start Contact-->
-     <section class="form-container" id="contact">
+    <!--Start Contact-->
+    <section class="form-container" id="contact">
       <h1 class="h1-contact">Contact Us</h1>
       <form class="contact-form">
-          <div class="row">
-              <div class="col">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
+
+        <div class="form-row">
+          <div class="input-group">
+            <input type="text" id="name" name="name" required autocomplete="on">
+            <label for="name"><i class=" fa fa-solid fa-user"></i> Your Name</label>
+           
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="phone" name="phone" required autocomplete="on">
+          <label for="phone"> 
+            <i class="fa fa-phone"></i> Phone No</label>
+        </div>
+        </div>
+          
+              <div class="input-group">
+                  
+              <input type="email" id="email" name="email" required autocomplete="on">
+              <label for="email"> <i class=" fa fa-solid fa-envelope"></i> Email</label>
               </div>
-              <div class="col">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-          </div>
-          <div class="row">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <div class="input-group">
+              
+              <textarea id="message" name="message" rows="8" required></textarea>
+              <label for="message"> <i class=" fa fa-light fa-comments"></i> Message</label>
           </div>
           <div class="row center-button">
-              <button type="submit" class="form-button">Submit</button>
+              <button type="submit" class="form-button">  Submit <i class=" fa fa-paper-plane"></i></button>
           </div>
       </form>
   </section>
