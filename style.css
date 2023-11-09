@@ -32,7 +32,6 @@ ul{
     background-position: center;
     padding-top: 60px;
 
-
 }
 
 
@@ -566,7 +565,7 @@ button:hover{
 }
 
 
-@media screen and (min-width: 300px)and  (max-width: 650px){
+@media  (min-width: 300px),  (max-width: 650px){
     .nav{
         position: fixed;
         top: 60px;
@@ -638,7 +637,7 @@ button:hover{
 }
 
 
-@media screen and (min-width: 651px)and  (max-width: 900px){
+@media (min-width: 651px),  (max-width: 900px){
     .nav{
         position: fixed;
         top: 60px;
