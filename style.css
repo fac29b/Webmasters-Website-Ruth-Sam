@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,13 +16,14 @@ ul {
 }
 
 .wrapper {
-    width: 100%;
-    margin: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/backgroundblue.jpeg);
-    background-size: cover;
-    height: 100vh;
-    border: red 1px solid;
-    background-position: center center; /* This centers the image both horizontally and vertically */
+    /* width: 100%; */
+    /* align-items: center;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-left: 0; */
+    min-width:min-content;
+
+ 
 }
 
 
@@ -37,9 +36,10 @@ ul {
     position: fixed;
     width: 100%;
     top: 0;
-    margin-inline: auto;
-    z-index: 1;
-    align-items: center;
+    margin-inline: auto; 
+    /* /* align-items: center; */
+
+    
 }
 
 .header-content {
@@ -129,16 +129,19 @@ span{
     color: #144f82;
 }
 
-
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/backgroundblue.jpeg);
+    background-size: cover;
+    /* height: 60vh; */
+    border: red 1px solid;
+    background-position: center center; 
+}
 
 
 .home-content{
     display: flex;
     justify-content: space-around;
-
-  
     margin-left: 10%;
-
     
 }
 
@@ -725,7 +728,7 @@ button:hover{
 
 @media screen and (max-width: 900px) {
     .wrapper {
-        padding: 0 20x; /* Adjust mobile padding */
+        padding: 0 20x; 
     }
 
     .header-content {
@@ -762,4 +765,117 @@ button:hover{
     .nav {
         /* Your existing media query styles for mobile */
     }
+}
+
+
+/* Your existing CSS */
+
+/* Add this media query to target smaller screens and fix the layout issue */
+@media screen and (max-width: 450px) {
+
+    .wrapper{
+        margin: 0;
+    }
+    .header-content {
+        margin: 0 /* Adjust padding for smaller screens */
+    }
+
+    .home-content {
+        margin: 0; /* Reset margin */
+    }
+
+    .home-h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .home-p {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .social-bar {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+/* changes  */
+
+/* Your existing CSS */
+
+/* Add this media query to target smaller screens and fix the layout issue */
+@media screen and (max-width: 448px) {
+    
+        body {
+            width: 448px; /* Set your desired fixed width */
+            margin: 0 auto; /* Center the content within this fixed width */
+            /* Additional styles as needed */
+        }
+    
+        /* You can also apply specific width settings for certain sections or elements within this media query if needed */
+        .specific-section {
+            width: 100%; /* Or any fixed width you prefer */
+            /* Other styles */
+        }
+    
+
+
+    .wrapper {
+        /* Consider adjusting the width or margins for smaller screens */
+        min-width: 100%;
+     
+        
+       
+    }
+
+    .header-content {
+        /* Adjust padding or margin for smaller screens */
+        padding: 0 10px; /* Example: Adjust the padding */
+    }
+
+    .home-content {
+        /* Adjust margins and paddings for smaller screens */
+        margin: 0;
+    }
+
+    .home-h1 {
+        /* Adjust font size for smaller screens */
+        font-size: 2rem;
+    }
+
+    .home-p {
+        /* Adjust padding for smaller screens */
+        padding: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .social-bar {
+        /* Adjust padding for smaller screens */
+        padding: 10px;
+    }
+}
+
+.nav{
+    position: fixed;
+    top: 47px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+
+}
+
+.nav-list{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.nav-link{
+    font-size: 0.9rem;
+}
+
+.hamburger{
+    display: block;
 }
