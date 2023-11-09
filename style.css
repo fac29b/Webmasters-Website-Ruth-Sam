@@ -16,7 +16,7 @@ ul {
 }
 
 .wrapper {
-    /* width: 100%; */
+    width: 100%;
     /* align-items: center;
     margin: 0 auto;
     margin-right: 0;
@@ -28,15 +28,14 @@ ul {
 
 
 .header {
-    
-    display: flex;
-    /* min-height: 60px; */
+    min-height: 60px;
     background-color: #fff;
     border: 1px solid red;
     position: fixed;
     width: 100%;
     top: 0;
-    margin-inline: auto; 
+    margin: 0;
+    padding: 0; 
     /* /* align-items: center; */
 
     
@@ -47,7 +46,8 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0 1rem;
+    position: fixed;
+    padding: 0 30px;
 }
 
 .nav-list{
@@ -142,6 +142,7 @@ span{
     display: flex;
     justify-content: space-around;
     margin-left: 10%;
+   
     
 }
 
@@ -763,6 +764,7 @@ button:hover{
     }
 
     .nav {
+        
         /* Your existing media query styles for mobile */
     }
 }
@@ -799,83 +801,12 @@ button:hover{
 
 
 
-/* changes  */
 
-/* Your existing CSS */
-
-/* Add this media query to target smaller screens and fix the layout issue */
 @media screen and (max-width: 448px) {
     
         body {
             width: 448px; /* Set your desired fixed width */
             margin: 0 auto; /* Center the content within this fixed width */
-            /* Additional styles as needed */
+            
         }
-    
-        /* You can also apply specific width settings for certain sections or elements within this media query if needed */
-        .specific-section {
-            width: 100%; /* Or any fixed width you prefer */
-            /* Other styles */
-        }
-    
-
-
-    .wrapper {
-        /* Consider adjusting the width or margins for smaller screens */
-        min-width: 100%;
-     
-        
-       
-    }
-
-    .header-content {
-        /* Adjust padding or margin for smaller screens */
-        padding: 0 10px; /* Example: Adjust the padding */
-    }
-
-    .home-content {
-        /* Adjust margins and paddings for smaller screens */
-        margin: 0;
-    }
-
-    .home-h1 {
-        /* Adjust font size for smaller screens */
-        font-size: 2rem;
-    }
-
-    .home-p {
-        /* Adjust padding for smaller screens */
-        padding: 0 10px;
-        font-size: 0.9rem;
-    }
-
-    .social-bar {
-        /* Adjust padding for smaller screens */
-        padding: 10px;
-    }
-}
-
-.nav{
-    position: fixed;
-    top: 47px;
-    left: 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 10px 0 25px;
-    transform: translateX(-100%);
-
-}
-
-.nav-list{
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-}
-
-.nav-link{
-    font-size: 0.9rem;
-}
-
-.hamburger{
-    display: block;
-}
+    };
