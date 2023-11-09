@@ -20,14 +20,15 @@ ul {
 .wrapper {
     width: 90%;
     margin: auto;
-    justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/backgroundblue.jpeg);
     background-size: cover;
-    background-position: center;
-    /* padding-top: 0; Remove the padding-top */
+    height: 100vh;
+    background-position: center center; /* This centers the image both horizontally and vertically */
 }
 
+
 .header {
+    
     display: flex;
     /* min-height: 60px; */
     background-color: #fff;
