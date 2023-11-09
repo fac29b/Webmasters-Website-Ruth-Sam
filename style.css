@@ -32,6 +32,7 @@ ul{
     background-position: center;
     padding-top: 60px;
 
+
 }
 
 
@@ -565,7 +566,7 @@ button:hover{
 }
 
 
-@media  (min-width: 300px),  (max-width: 650px){
+@media screen and (min-width: 300px)and  (max-width: 650px){
     .nav{
         position: fixed;
         top: 60px;
@@ -637,7 +638,7 @@ button:hover{
 }
 
 
-@media (min-width: 651px),  (max-width: 900px){
+@media screen and (min-width: 651px)and  (max-width: 900px){
     .nav{
         position: fixed;
         top: 60px;
@@ -701,15 +702,4 @@ button:hover{
  
 }
 
-/* added media query to fix mobile responsive issue  */
-
-@media screen and (max-width: 650px) {
-    .wrapper, .ourteam, .portfolio, .ourteam--content1, .ourteam--content2, .portfolio--container {
-       width: 100%;
-    }
-    .home-content {
-       margin-left: 0;
-       margin-right: 0;
-    }
- }
- 
+/* 1260px width Change our team elements to stack.  */
