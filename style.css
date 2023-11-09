@@ -18,11 +18,12 @@ ul {
 }
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     margin: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/backgroundblue.jpeg);
     background-size: cover;
     height: 100vh;
+    border: red 1px solid;
     background-position: center center; /* This centers the image both horizontally and vertically */
 }
 
@@ -32,11 +33,11 @@ ul {
     display: flex;
     /* min-height: 60px; */
     background-color: #fff;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: fixed;
-    width: 90%;
+    width: 100%;
     top: 0;
-    
+    margin-inline: auto;
     z-index: 1;
     align-items: center;
 }
@@ -201,12 +202,13 @@ span{
 .ourteam {
     /* margin-top: 20rem; */
     text-align: center;
-    /* border: solid 3px red; */
+    border: solid 3px red;
     display: flex;
     flex-direction: column;
     background-color: #303030;
     background-color: lavender;
     background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
+
 }
 /* 1260px width Change our team elements to stack.  */
 
@@ -564,9 +566,10 @@ button:hover{
 @media screen and (min-width: 300px)and  (max-width: 650px){
     .nav{
         position: fixed;
-        top: 60px;
+        top: 47px;
+        /* margin-top: 5rem; */
         left: 0;
-        background-color: #e2dcdc;
+        background-color: #ffffff;
         width: 100%;
         padding: 10px 0 25px;
         transform: translateX(-100%);
@@ -642,9 +645,9 @@ button:hover{
 @media screen and (min-width: 651px)and  (max-width: 900px){
     .nav{
         position: fixed;
-        top: 60px;
+        top: 47px;
         left: 0;
-        background-color: #0a0909;
+        background-color: #ffffff;
         width: 100%;
         padding: 10px 0 25px;
         transform: translateX(-100%);
@@ -717,4 +720,46 @@ button:hover{
  
 }
 
-/* 1260px width Change our team elements to stac
+
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        padding: 0 20x; /* Adjust mobile padding */
+    }
+
+    .header-content {
+        padding: 0 20px; /* Adjust mobile padding */
+        /* width: 90%; */
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px; /* Adjust mobile padding */
+    }
+
+    .home-h1 {
+        font-size: 2rem;
+        /* Other style adjustments as per mobile view */
+    }
+
+    .home-p {
+        margin: 0 auto;
+        padding: 0 20px; /* Adjust mobile padding */
+        /* Other style adjustments as per mobile view */
+    }
+
+    .social-bar {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem 20px; /* Adjust mobile padding */
+        /* Other style adjustments as per mobile view */
+    }
+
+    .nav {
+        /* Your existing media query styles for mobile */
+    }
+}
