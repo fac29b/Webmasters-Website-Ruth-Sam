@@ -701,4 +701,15 @@ button:hover{
  
 }
 
-/* 1260px width Change our team elements to stack.  */
+/* added media query to fix mobile responsive issue  */
+
+@media screen and (max-width: 650px) {
+    .wrapper, .ourteam, .portfolio, .ourteam--content1, .ourteam--content2, .portfolio--container {
+       width: 100%;
+    }
+    .home-content {
+       margin-left: 0;
+       margin-right: 0;
+    }
+ }
+ 
