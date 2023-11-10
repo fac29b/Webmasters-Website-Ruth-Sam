@@ -85,3 +85,21 @@ startAnimation();
 const generate = [];
 
 //END///////////////////////////////////////////////////////////
+
+
+// contact form label annimation 
+const labels = document.querySelectorAll('.input-group label');
+
+labels.forEach(label => {
+    // Extract the Font Awesome icon from the label
+    const iconHTML = label.querySelector('i') ? label.querySelector('i').outerHTML : '';
+
+    // Apply the transition effect to each letter
+    label.innerHTML = label.innerText
+        .split('')
+        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+        .join('');
+
+    // Wrap the Font Awesome icon in a span and prepend it to the label
+    label.innerHTML = `<span style="transition-delay:${labels.length * 50}ms">${iconHTML}</span>` + label.innerHTML;
+});
