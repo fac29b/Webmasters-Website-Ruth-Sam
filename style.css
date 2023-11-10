@@ -560,13 +560,34 @@ label {
 }
 
 
-input:focus~label,
+/* input:focus~label,
 input:valid~label,
 textarea:focus~label,
 textarea:valid~label{
     top:-35px;
     font-size: 14px;
+  } */
+
+  .input-group label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+
   }
+
+
+.input-group input:focus~label span,
+.input-group input:valid~label span,
+.input-group textarea:focus~label span,
+.input-group textarea:valid~label span{
+    color: #fff;
+    transform: translateY(-40px);
+}
+label span{
+    color: #fff;
+}
+
+
 
   .form-row{
     display: flex;
