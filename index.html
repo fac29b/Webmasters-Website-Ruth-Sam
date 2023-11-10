@@ -162,8 +162,9 @@
 </section>
     <!--Start Contact-->
     <section class="form-container" id="contact">
+
       <h1 class="h1-contact">Contact Us</h1>
-      <form class="contact-form">
+      <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
 
         <div class="form-row">
           <div class="input-group">
@@ -197,6 +198,26 @@
   </section>
 
   <!-- End Contact-->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "webmastersproject1@gmail.com",
+    Password : "foundersandcoders2023",
+    To : 'webmastersproject1@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Email: " + document.getElementById("phone").value
+    + "<br> Email: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully!")
+);
+    }
+  </script>
     <script src="script.js"></script>
     </div>
   </body>

@@ -49,39 +49,3 @@ const submitElement = document.querySelector('.submit')
 
 
 /////////////////BACKGROUND IMAGE ANIMATIONS//////////////////////////////////
-
-const backgroundContainer = document.querySelector('.home');
-const backgroundContainer2 = document.querySelector('.ourteam');
-const backgroundContainer3 = document.querySelector('.portfolio');
-
-let xPos = 0;
-let speed = 0.2; // Adjust speed (lower value for slower speed)
-let frame;
-
-function moveBackground() {
-    xPos -= speed;
-    backgroundContainer.style.backgroundPosition = `${xPos}px 0`;
-    backgroundContainer2.style.backgroundPosition = `${xPos}px 0`;
-    backgroundContainer3.style.backgroundPosition = `${xPos}px 0`;
-
-    if (xPos <= -window.innerWidth) {
-        xPos = 0;
-    }
-
-    frame = requestAnimationFrame(moveBackground);
-}
-
-function startAnimation() {
-    frame = requestAnimationFrame(moveBackground);
-}
-
-function stopAnimation() { 
-    cancelAnimationFrame(frame);
-}
-
-startAnimation();
-
-
-const generate = [];
-
-//END///////////////////////////////////////////////////////////
