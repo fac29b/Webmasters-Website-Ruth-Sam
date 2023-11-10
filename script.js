@@ -103,3 +103,29 @@ labels.forEach(label => {
     // Wrap the Font Awesome icon in a span and prepend it to the label
     label.innerHTML = `<span style="transition-delay:${labels.length * 50}ms">${iconHTML}</span>` + label.innerHTML;
 });
+
+// submit javascripit 
+
+function sendEmail() {
+    // Replace these values with your actual SMTP credentials
+    const smtpConfig = {
+      Host: "smtp.gmail.com",
+      Username: "your_gmail_username@gmail.com",
+      Password: "your_gmail_password",
+    };
+  
+    Email.send({
+      ...smtpConfig,
+      To: 'webmastersproject1@gmail.com',
+      From: document.getElementById("email").value,
+      Subject: "New Contact Form Enquiry",
+      Body: `
+        Name: ${document.getElementById("name").value}
+        <br> Email: ${document.getElementById("email").value}
+        <br> Phone: ${document.getElementById("phone").value}
+        <br> Message: ${document.getElementById("message").value}
+      `,
+    }).then(
+      message => alert("Message Sent Successfully!")
+    );
+  }
