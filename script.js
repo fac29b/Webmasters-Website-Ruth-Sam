@@ -104,14 +104,14 @@ labels.forEach(label => {
     label.innerHTML = `<span style="transition-delay:${labels.length * 50}ms">${iconHTML}</span>` + label.innerHTML;
 });
 
-// submit javascripit 
+// submit button javascripit 
 
 function sendEmail() {
-    // Replace these values with your actual SMTP credentials
+    // SMTP credentials
     const smtpConfig = {
-      Host: "smtp.gmail.com",
-      Username: "your_gmail_username@gmail.com",
-      Password: "your_gmail_password",
+      Host: "smtp.elasticemail.com",
+      Username: "webmastersproject1@gmail.com",
+      Password: "96502669B84DE90F9668DD0418DFD0C47805",
     };
   
     Email.send({
@@ -127,5 +127,5 @@ function sendEmail() {
       `,
     }).then(
       message => alert("Message Sent Successfully!")
-    );
+    ).catch(error => console.error("Error sending email:", error));
   }
