@@ -103,8 +103,8 @@ span{
 
 .social-bar{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     padding: 25px;
 }
 
@@ -156,15 +156,20 @@ span{
 
 
 .home-content{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content:flex-start; */
     /* margin-left: 5px; */
-    text-align: center;
+    /* text-align: center;
     width: 100%;
-    width: 60rem; /* Set your desired fixed width */
-    margin: 0 auto; /* Center the content within this fixed width */
+    width: 2-rem;  */
+    /* margin: 0 auto; Center the content within this fixed width */
+    /* border: solid 1px pink; */
     
-   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -187,20 +192,21 @@ span{
 
 .home-p{
 
-    width: 600px;
+    /* width: 600px; */
     color: #fff;
     font-size: 1.4rem;
-
-    /* width: 600px; */
-    max-width: 60ch;
+    width: 600px;
+    max-width: 55ch;
     color: #fff;
     margin-top: 1rem;
     margin-bottom: 1rem;
-   
+    width: 100%;
+    margin: 0 auto; /* Center the content within this fixed width */
     text-align: center;
     /* margin-inline: auto; */
     margin-left: 7rem;
     margin-right: 1rem;
+    /* border: solid 1px pink; */
 
     }
 
@@ -219,6 +225,7 @@ span{
     cursor: pointer;
     transition: 0.8s;
     border-radius: 10px;
+    
 
     
 }
@@ -681,9 +688,6 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
-      
-    
         
     }
     
