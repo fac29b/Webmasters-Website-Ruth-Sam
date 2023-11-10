@@ -158,7 +158,12 @@ span{
 .home-content{
     display: flex;
     justify-content: space-around;
-    margin-left: 10%;
+    /* margin-left: 5px; */
+    text-align: center;
+    width: 100%;
+    width: 60rem; /* Set your desired fixed width */
+    margin: 0 auto; /* Center the content within this fixed width */
+    
    
     
 }
@@ -277,6 +282,9 @@ span{
     margin: 1rem 1rem;
     border-radius: 100%; 
     justify-content: center;
+    
+    margin: 0 auto; /* Center the content within this fixed width */
+    
    
 
 }
