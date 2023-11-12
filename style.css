@@ -43,10 +43,8 @@ ul {
 
 
 .header{
-
     min-height: 50px;
-
-    background-color: #fff;
+    background-color: lightgray;
     /* border: 1px solid red; */
     position: fixed;
     width: 100%;
@@ -54,6 +52,7 @@ ul {
     margin: 0;
     padding: 0; 
     /* /* align-items: center; */
+   
 
     
 }
@@ -152,6 +151,7 @@ span{
     /* height: 60vh; */
     /* border: red 1px solid; */
     background-position: center center; 
+    height: 100vh;
 }
 
 
@@ -174,19 +174,17 @@ span{
 }
 
 .home-h1{
-
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
-
     margin: 6% ;
-
-    padding-top: 5rem;
+    padding: 5%;
    margin-top: 1rem;
    margin-bottom: 1rem;
-
-    color: #fff;
+   color: #fff;
   text-shadow: 2px 2px #00aeff;
+ 
+
     
 }
 
@@ -201,7 +199,7 @@ span{
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 100%;
-    margin: 0 auto; /* Center the content within this fixed width */
+    /* margin: 0 auto; Center the content within this fixed width */
     text-align: center;
     /* margin-inline: auto; */
     margin-left: 7rem;
@@ -225,6 +223,7 @@ span{
     cursor: pointer;
     transition: 0.8s;
     border-radius: 10px;
+ 
     
 
     
@@ -250,7 +249,7 @@ span{
     flex-direction: column;
     background-color: #303030;
     background-color: lavender;
-    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(18, 116, 202, 0.919)), url(./image/Background\ colors.jpg);
 
 }
 /* 1260px width Change our team elements to stack.  */
@@ -264,10 +263,10 @@ span{
 
 
 .ourteam--title{
-    font-size: 3.5rem;
-    letter-spacing: 0.05em;
-    line-height: 2;
-    color: white;
+    color: #fff;
+    text-shadow: 2px 2px #00aeff;
+    font-size: 3rem;
+      font-weight: 700;
     padding: 1rem 1rem 2rem 2rem;
     /* border: solid red 2px; */
 }
@@ -433,14 +432,15 @@ cursor: pointer;
     background-color: #303030;
     color: white;
     background-color: lavender;
-    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(236, 230, 230, 0.1)), url(./image/Background\ colors.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 1.1), rgba(5, 123, 225, 0.826)), url(./image/Background\ colors.jpg);
     
     
 }
 .portfolio--title{
-   color: white;
-    font-size: 3.5rem;
-    letter-spacing: 0.05em;
+    color: #fff;
+    text-shadow: 2px 2px #00aeff;
+    font-size: 3rem;
+      font-weight: 700;
     line-height: 1;
     padding-top: 3rem;
   
@@ -508,15 +508,19 @@ justify-content: center;
 
 
 .h1-contact {
-    font-size: 3rem;
     text-align: center;
-    color: #fff;
     padding: 20px;
+    color: #fff;
+  text-shadow: 2px 2px #00aeff;
+  font-size: 3rem;
+    font-weight: 700;
 }
 .form-container{
-
+height: 100vh;
 background-color: #fce055;
 background-image: linear-gradient(319deg, #b8a071 0%, #256eff 37%, #000517 100%);
+background-size: cover;
+/* border: pink 1px solid; */
 
 }
 .contact-form {
@@ -524,6 +528,7 @@ background-image: linear-gradient(319deg, #b8a071 0%, #256eff 37%, #000517 100%)
     margin: 0 auto;
     padding: 10px;
     width: 90%;
+   
 }
 
 .input-group{
@@ -655,6 +660,27 @@ button:hover{
     transform: translateY(-7px) rotate(-45deg);
 }
 
+
+/* footer */
+.footer{
+    padding: 0;
+    padding-top: 0;
+    text-align: center;
+    background-color: rgb(0, 170, 249);
+    background-image: linear-gradient(rgba(15, 119, 238, 0.042), rgba(1, 129, 240, 0.442)), url(./image/Background\ colors.jpg);
+    background-size: cover;
+    border-top: white 1.8px solid;
+   
+}
+.footer__title{
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px #008efa;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 @media screen and (min-width: 300px)and  (max-width: 650px){
     .nav{
