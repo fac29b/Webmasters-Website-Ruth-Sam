@@ -82,10 +82,9 @@ function stopAnimation() {
 startAnimation();
 
 
-const generate = [];
+
 
 //END///////////////////////////////////////////////////////////
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -101,6 +100,37 @@ document.addEventListener('DOMContentLoaded', function () {
         // Show the submit message
         document.getElementById('submitMessage').style.display = 'block';
 
+        // Set timeout to hide submit message and show form again after 3 secs. 
+
+        setTimeout(() => {
+            submitMessage.style.display = 'none';
+            document.getElementById('emailForm').style.display = 'block';
+        }, 3000);
     });
 });
 // 
+// // 
+// =======
+//     // Get references to the form and the submit message div
+//     var emailForm = document.getElementById('emailForm');
+//     var submitMessage = document.getElementById('submitMessage');
+  
+//     // Add a submit event listener to the form
+//     emailForm.addEventListener('submit', function (event) {
+//       // Prevent the default form submission
+//       event.preventDefault();
+  
+//       // Toggle visibility using CSS classes
+//       emailForm.classList.add('hidden');
+//       submitMessage.classList.remove('hidden');
+  
+//       // Reset the form after 3 seconds
+//       setTimeout(function () {
+//         emailForm.classList.remove('hidden');
+//         submitMessage.classList.add('hidden');
+//         // You may also want to reset the form fields if needed
+//         emailForm.reset();
+//       }, 3000);
+//     });
+//   });
+// >>>>>>> main
