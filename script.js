@@ -82,10 +82,8 @@ function stopAnimation() {
 startAnimation();
 
 
-const generate = [];
 
-//END///////////////////////////////////////////////////////////
-
+//END////////
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -110,3 +108,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 // 
+
