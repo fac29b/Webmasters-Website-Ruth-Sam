@@ -86,8 +86,6 @@ const generate = [];
 
 //END///////////////////////////////////////////////////////////
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const submitBtn = document.getElementById('submit');
 
@@ -101,6 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Show the submit message
         document.getElementById('submitMessage').style.display = 'block';
 
+        // Set timeout to hide submit message and show form again after 3 secs. 
+
+        setTimeout(() => {
+            submitMessage.style.display = 'none';
+            document.getElementById('emailForm').style.display = 'block';
+        }, 3000);
     });
 });
 // 
