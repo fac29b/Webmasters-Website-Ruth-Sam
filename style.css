@@ -10,6 +10,11 @@ body {
     background-color: rgb(0, 115, 255);
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+ 
 }
 
 a {
@@ -23,8 +28,23 @@ ul {
 
 .wrapper {
     width: 100%;
-    min-width: min-content;
+    margin: 0 auto;
+    /* min-width:max-content; */
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    border: red 1px solid;
 }
+
+body, .wrapper {
+    width: 100%;
+    height: 100vh; /* This will make them take the full viewport height */
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    /* Your other styles */
+}
+
 
 .header {
     background-color: lightgray;
@@ -166,7 +186,7 @@ span {
     /* width: 600px; */
     color: #fff;
     font-size: 1.4rem;
-    width: 600px;
+    /* width: 600px; */
     max-width: 55ch;
     color: #fff;
     margin-top: 1rem;
@@ -175,8 +195,8 @@ span {
     /* margin: 0 auto; Center the content within this fixed width */
     text-align: center;
     /* margin-inline: auto; */
-    margin-left: 7rem;
-    margin-right: 1rem;
+    margin-left: 7rem; 
+     margin-right: 1rem;
     /* border: solid 1px pink; */
 
     }
@@ -675,7 +695,7 @@ button:hover {
     font-weight: 700;
 }
 
-@media screen and (min-width: 300px)and  (max-width: 650px){
+@media screen and (min-width: 100px)and  (max-width: 650px){
     .nav{
         position: fixed;
         top: 47px;
@@ -835,7 +855,7 @@ button:hover {
 
 @media screen and (max-width: 900px) {
     .wrapper {
-        padding: 0 20x; 
+        /* padding: 0 20x;  */
     }
 
     .header-content {
@@ -873,40 +893,109 @@ button:hover {
 }
 
 
-/* Your existing CSS */
-
-/* Add this media query to target smaller screens and fix the layout issue */
 @media screen and (max-width: 448px) {
-
-    body {
-        max-width: 448px; 
-        margin: 0 auto; 
+    body, .wrapper {
+        min-width: min-content;
+        width: 100vw;
+        
+        
     }
 
-    .wrapper{
-        margin: 0;
-    }
-    .header-content {
-        margin: 0 /* Adjust padding for smaller screens */
+    .header {
+    
     }
 
-    .home-content {
-        margin: 0; /* Reset margin */
+    .home-content, .ourteam--content1, .ourteam--content2, .portfolio--container {
+        
     }
 
-    .home-h1 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-
-    .home-p {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
+ 
     .social-bar {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px 0; /* Adjust padding */
+    }
+
+
+    .ourteam--name, .ourteam--about, .portfolio--box-name, .portfolio--box-info {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list a {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .icon-link, .icon {
+        font-size: 1rem; /* Adjust icon font size */
     }
 }
 
+@media screen and (max-width: 375px) {
+    /* Add additional specific styles for screen sizes below 375px if necessary */
+}
+
+
+@media screen and (max-width: 299px) {
+    body, .wrapper {
+        min-width: min-content;
+        width: 100vw;
+        
+        
+    }
+
+    .header {
+    
+    }
+
+    .home-content, .ourteam--content1, .ourteam--content2, .portfolio--container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-h1 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin: 10px 0; /* Adjust margin */
+        padding: 0; /* Remove padding */
+    }
+
+    .home-p {
+        font-size: 1rem; /* Adjust font size */
+        margin: 10px; /* Adjust margin */
+        padding: 0 10px; /* Adjust padding */
+        width: auto; /* Allow width to adjust naturally */
+    }
+
+    .social-bar {
+        padding: 10px 0; /* Adjust padding */
+    }
 
 
 
+    .ourteam--pic, .portfolio--box-picture {
+        width: 100px; /* Adjust image size */
+        height: 100px; /* Adjust image size */
+        margin: 10px auto; /* Adjust margin */
+    }
+
+    .ourteam--name, .ourteam--about, .portfolio--box-name, .portfolio--box-info {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list a {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .icon-link, .icon {
+        font-size: 1rem; /* Adjust icon font size */
+    }
+}
