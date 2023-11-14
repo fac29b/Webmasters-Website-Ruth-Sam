@@ -108,28 +108,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 // 
-// // 
-// =======
-//     // Get references to the form and the submit message div
-//     var emailForm = document.getElementById('emailForm');
-//     var submitMessage = document.getElementById('submitMessage');
-  
-//     // Add a submit event listener to the form
-//     emailForm.addEventListener('submit', function (event) {
-//       // Prevent the default form submission
-//       event.preventDefault();
-  
-//       // Toggle visibility using CSS classes
-//       emailForm.classList.add('hidden');
-//       submitMessage.classList.remove('hidden');
-  
-//       // Reset the form after 3 seconds
-//       setTimeout(function () {
-//         emailForm.classList.remove('hidden');
-//         submitMessage.classList.add('hidden');
-//         // You may also want to reset the form fields if needed
-//         emailForm.reset();
-//       }, 3000);
-//     });
-//   });
-// >>>>>>> main
+
