@@ -12,35 +12,27 @@
     <title>Project 1 Sam & Ruth</title>
   </head>
   <body>
-    
-    <header class="header"  id="index">
-      <div class="header-content">
-      <a href="#index"><p class="logo">Web<span>Masters</span></p></a>
-
-      <nav class="nav">
-      <ul class="nav-list">
-          <li class="nav-item"><a href="#index" class =  'nav-link'>Home</a></li>
-          <li class="nav-item"><a href="#ourteam" class =  'nav-link'>Our Team</a></li>
-          <li class="nav-item"><a href="#portfolio" class =  'nav-link'>Portfolio</a></li>
-          <li class="nav-item"><a href="#contact" class =  'nav-link'>Contact</a></li>
-          
-      <span class="nav-span"></span>
-      </ul>
-  </nav>
-
-      <div class="hamburger">
-
+    <div class="wrapper" id="index">
+      <header class="header">
+        <a href="#index" class="logo">Web<span>Masters</span></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#index">Home</a></li>
+            <li><a href="#ourteam">Our Team</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
-      </div>
       </header>
-
-     
 
 
       <section class="home" >
+       
 
           <h1 class="home-h1">
               Turning Your Visions into Online Realities
@@ -59,14 +51,14 @@
 
                   <div class="social-button">
                       <div class="icon">
-                          <i class="fa fa-linkedin"></i>
+                          <i class="fa fa-linkedin" id="linkedin"></i>
                       </div>
 
                   </div>
 
                   <div class="social-button">
                       <div class="icon">
-                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-twitter" id="twitter"></i>
                       </div>
 
                   </div>
@@ -74,7 +66,7 @@
 
                   <div class="social-button">
                       <div class="icon">
-                          <a href="https://www.facebook.com/ruth.tamiru.1" class="icon-link"><i class="fa fa-facebook"></i></a>
+                          <a href="https://www.facebook.com/ruth.tamiru.1" class="icon-link"><i class="fa fa-facebook" id="facebook"></i></a>
                       </div>
 
                   </div>
@@ -194,29 +186,33 @@
               <label for="message"> <i class=" fa fa-light fa-comments"></i> Message</label>
           </div>
           <div class="row center-button">
-              
-            <button type="submit" class="form-button" id="submit">Submit <i class="fa fa-paper-plane"></i></button>
+              <button type="submit" class="form-button" id="submit">  Submit <i class=" fa fa-paper-plane"></i></button>
           </div>
         </form>
 
 
-       <!-- Submit Message Container -->
-<div id="submitMessage" style="display: none;">
-  <p>Thanks for contacting us! A member of our team will get back to you shortly.</p>
-</div>
+        <div id="submitMessage" style="display: none;">
+          <p>Thanks for contacting us!. A member of our team will get back to you shortly.</p>
+          
+      </div>
 
     </section>
 
   <!-- End Contact-->
  <!-- Footer Start -->
 
- 
+ <!-- Footer End -->
  
  <footer class="footer container">
-  <a class="footer__title" href="#top">Back To Top</a>
+  <a class="footer__title" href="#top">Back To Top</h2>
 </footer>
-<!-- Footer End -->
-<script src="script.js"></script>
-  
+
+    <!-- Include the SMTP.js library -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Include your custom JavaScript file -->
+    <script src="script.js"></script>
+    </div>
   </body>
 </html>
+
