@@ -1,4 +1,14 @@
 
+/* updated version */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: rgb(0, 115, 255);
@@ -1464,30 +1474,8 @@ body{
     .home-content {
       flex-direction: column; /* Stack home content vertically for mobile */
       margin-left: 2%; /* Adjust margin for mobile */
+/* 
 
-    }
-  
-    .home-h1 {
-
-        font-size: 1.5rem; /* Adjust font size */
-        margin: 10px 0; /* Adjust margin */
-        padding: 0; /* Remove padding */
-
-/*       font-size: 1.2rem; /* Adjust font size for mobile */
-      margin: 1% 3%; /* Adjust margin for mobile */
-      text-align: center; /* Center align text for mobile */
-      text-shadow: none; */
-      
-
-    }
-  
-    .home-p {
-
-        font-size: 1rem; /* Adjust font size */
-        margin: 10px; /* Adjust margin */
-        padding: 0 10px; /* Adjust padding */
-        width: auto; /* Allow width to adjust naturally */
-    }
 
     .social-bar {
         padding: 10px 0; /* Adjust padding */
