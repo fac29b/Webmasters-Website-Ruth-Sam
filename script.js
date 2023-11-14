@@ -83,8 +83,7 @@ startAnimation();
 
 
 
-
-//END///////////////////////////////////////////////////////////
+//END////////
 
 
 document.addEventListener('DOMContentLoaded', function () {
