@@ -87,45 +87,20 @@ const generate = [];
 //END///////////////////////////////////////////////////////////
 
 
-// contact form label annimation 
-const labels = document.querySelectorAll('.input-group label');
 
-labels.forEach(label => {
-    // Extract the Font Awesome icon from the label
-    const iconHTML = label.querySelector('i') ? label.querySelector('i').outerHTML : '';
+document.addEventListener('DOMContentLoaded', function () {
+    const submitBtn = document.getElementById('submit');
 
-    // Apply the transition effect to each letter
-    label.innerHTML = label.innerText
-        .split('')
-        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-        .join('');
+    submitBtn.addEventListener('click', () => {
+        // Prevent the default form submission behavior
+        event.preventDefault();
 
-    // Wrap the Font Awesome icon in a span and prepend it to the label
-    label.innerHTML = `<span style="transition-delay:${labels.length * 50}ms">${iconHTML}</span>` + label.innerHTML;
+        // Hide the form
+        document.getElementById('emailForm').style.display = 'none';
+
+        // Show the submit message
+        document.getElementById('submitMessage').style.display = 'block';
+
+    });
 });
-
-// submit button javascripit 
-
-function sendEmail() {
-    // SMTP credentials
-    const smtpConfig = {
-      Host: "smtp.elasticemail.com",
-      Username: "webmastersproject1@gmail.com",
-      Password: "96502669B84DE90F9668DD0418DFD0C47805",
-    };
-  
-    Email.send({
-      ...smtpConfig,
-      To: 'webmastersproject1@gmail.com',
-      From: document.getElementById("email").value,
-      Subject: "New Contact Form Enquiry",
-      Body: `
-        Name: ${document.getElementById("name").value}
-        <br> Email: ${document.getElementById("email").value}
-        <br> Phone: ${document.getElementById("phone").value}
-        <br> Message: ${document.getElementById("message").value}
-      `,
-    }).then(
-      message => alert("Message Sent Successfully!")
-    ).catch(error => console.error("Error sending email:", error));
-  }
+// 
