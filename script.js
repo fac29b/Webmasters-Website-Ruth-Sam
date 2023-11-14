@@ -1,3 +1,6 @@
+// updated version
+
+
 // Burger/Mobile Nav Bar Functionality
 const navElement = document.querySelector('.nav')
 const hambergerElement = document.querySelector('.hamburger')
