@@ -87,45 +87,18 @@ const generate = [];
 //END///////////////////////////////////////////////////////////
 
 
-// contact form label annimation 
-const labels = document.querySelectorAll('.input-group label');
+document.addEventListener('DOMContentLoaded', function () {
+    const submitBtn = document.getElementById('submit');
 
-labels.forEach(label => {
-    // Extract the Font Awesome icon from the label
-    const iconHTML = label.querySelector('i') ? label.querySelector('i').outerHTML : '';
+    submitBtn.addEventListener('click', () => {
+        // Prevent the default form submission behavior
+        event.preventDefault();
 
-    // Apply the transition effect to each letter
-    label.innerHTML = label.innerText
-        .split('')
-        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-        .join('');
+        // Hide the form
+        document.getElementById('emailForm').style.display = 'none';
 
-    // Wrap the Font Awesome icon in a span and prepend it to the label
-    label.innerHTML = `<span style="transition-delay:${labels.length * 50}ms">${iconHTML}</span>` + label.innerHTML;
+        // Show the submit message
+        document.getElementById('submitMessage').style.display = 'block';
+
+    });
 });
-
-// submit javascripit 
-
-function sendEmail() {
-    // Replace these values with your actual SMTP credentials
-    const smtpConfig = {
-      Host: "smtp.gmail.com",
-      Username: "your_gmail_username@gmail.com",
-      Password: "your_gmail_password",
-    };
-  
-    Email.send({
-      ...smtpConfig,
-      To: 'webmastersproject1@gmail.com',
-      From: document.getElementById("email").value,
-      Subject: "New Contact Form Enquiry",
-      Body: `
-        Name: ${document.getElementById("name").value}
-        <br> Email: ${document.getElementById("email").value}
-        <br> Phone: ${document.getElementById("phone").value}
-        <br> Message: ${document.getElementById("message").value}
-      `,
-    }).then(
-      message => alert("Message Sent Successfully!")
-    );
-  }

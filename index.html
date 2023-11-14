@@ -165,9 +165,8 @@
 </section>
     <!--Start Contact-->
     <section class="form-container" id="contact">
-
       <h1 class="h1-contact">Contact Us</h1>
-      <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
+      <form class="contact-form" id="emailForm">
 
         <div class="form-row">
           <div class="input-group">
@@ -186,7 +185,7 @@
               <div class="input-group">
                   
               <input type="email" id="email" name="email" required autocomplete="on">
-              <label for="email"> <i class=" fa fa-solid fa-envelope"></i> Email</label>
+              <label for="email"><i class=" fa fa-solid fa-envelope"></i> Email</label>
               </div>
           
           <div class="input-group">
@@ -195,10 +194,17 @@
               <label for="message"> <i class=" fa fa-light fa-comments"></i> Message</label>
           </div>
           <div class="row center-button">
-              <button type="submit" class="form-button">  Submit <i class=" fa fa-paper-plane"></i></button>
+              <button type="submit" class="form-button" id="submit">  Submit <i class=" fa fa-paper-plane"></i></button>
           </div>
-      </form>
-  </section>
+        </form>
+
+
+        <div id="submitMessage" style="display: none;">
+          <p>Thanks for contacting us!. A member of our team will get back to you shortly.</p>
+          
+      </div>
+
+    </section>
 
   <!-- End Contact-->
  
