@@ -447,8 +447,9 @@ z-index: -1;
 }
 .portfolio--description{
     font-size: 1.5rem;
-    max-width: 40ch;
-    margin: 1rem auto;
+    max-width: 38ch;
+    margin: 3rem auto;
+ 
 
 }
 .portfolio--container{
@@ -909,8 +910,12 @@ button:hover {
         
         
     }
+    .portfolio--description{
+        font-size: 1rem;
+        max-width: 38ch;
+        margin: 3rem auto;
 
-    .header {
+  
     
     }
 
@@ -997,3 +1002,4 @@ button:hover {
         font-size: 1rem; /* Adjust icon font size */
     }
 }
+
