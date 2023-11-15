@@ -1,3 +1,7 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const emailForm = document.getElementById('emailForm');
     const submitMessage = document.getElementById('submitMessage');
