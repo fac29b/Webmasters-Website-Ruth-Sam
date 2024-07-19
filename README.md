@@ -1,40 +1,51 @@
 # Project1Sam-Ruth
 
-Sam's Notes:
+## Sam's Notes
 
-November 2nd: 
-1. Created Our Team section based upon Ruth's page designs.
-2. Used semantic HTML to conciously create elements and avoid to many generic custom divs.
-3. Used Flex display to achieve element placement i.e. Profile images on one side and then name, info and button on the opposide side. 
-4. Our Team margin-top increased to 30rem. (Fixed the top section overlapping)
-5. Added Ruth and my pictures into the image tags for aesthetics.
+### Changes and Additions
 
-3rd November: Changes -
-1. Add further styling to Our Team
-2. Create Portfolio Section and styling
+- **November 2nd:**
+  - Created "Our Team" section based on Ruth's page designs.
+  - Used semantic HTML for element creation, minimizing generic custom divs.
+  - Implemented Flex display for element placement: profile images on one side, and name, info, and button on the opposite side.
+  - Increased "Our Team" margin-top to 30rem to fix top section overlap.
+  - Added Ruth's and my pictures in image tags for aesthetics.
 
-4th November: Changes - 
-1. Added Porfolio section using HTML and CSS
-2. Added pictures from projects.
-3. Created column structure using flex-box.
-4. Made improvements to Our Team Section
-5. Added Ruth's button styling to Portfolio Section
+- **November 3rd:**
+  - Enhanced styling for "Our Team".
+  - Created and styled "Portfolio" Section.
 
-5th November: Changes - 
-1. Added more images for projects and background use.
-2. Added project titles.
-3. Create CSS styling for the buttons in 'Our Team' section.
-4. Adjusted margins of various elements.
+- **November 4th:**
+  - Added "Portfolio" section using HTML and CSS.
+  - Included project pictures.
+  - Created column structure using flex-box.
+  - Improved "Our Team" Section.
+  - Applied Ruth's button styling to "Portfolio" Section.
 
-7th November:  - 
-1.Paste HTML from Ruth into my version. 
-2. Try to create Javascript functionality for burger. 
-3. Add styling for burger. 
+- **November 5th:**
+  - Added additional images for projects and background.
+  - Included project titles.
+  - Created CSS styling for buttons in "Our Team" section.
+  - Adjusted margins of various elements.
 
-8th November:
-Ruth pushed her changes that added responsive design to almost the whole site. She had also added the hamburger, styling and JS functionality. 
-1. I realized that the hamburger would disappear after clicking a link on the hamburger nav bar. This was a small fix that changed the JS to add ClassList.
-2. I added responsive design using media queries to the our team section. Now when a max-width of 1200 px is reached, the elements stack and behave much like the porfolio section does below. For this I used: flex-direction: column; & align-items: center;. The parent div already assigned them as flex so they adhere to the behaviour. 
+- **November 7th:**
+  - Integrated HTML from Ruth into my version.
+  - Attempted to create Javascript functionality for the burger menu.
+  - Added styling for burger menu.
+
+- **November 8th:**
+  - Noted Ruth's addition of responsive design and hamburger menu with JS functionality.
+  - Fixed an issue where the hamburger menu would disappear after clicking a link; implemented ClassList in JS.
+  - Added responsive design to "Our Team" section using media queries, flex-direction: column, and align-items: center.
+
+- **General Changes:**
+  - Experimented with a background animation in Javascript for aesthetic enhancement.
+  - Attempted to add Javascript functionality for form submission to our business Gmail, with limited success due to Google restrictions.
+  - Resolved responsive design issues, particularly at widths below 480px.
+  - Fixed zoom-in issue at page start by adjusting the top HTML code in the head from initial-1.
+  - Corrected the 'Hire Me' button overlap on the top navbar, based on Emily's advice using z-index.
+  - Improved the function for displaying a green message box after form submission, adding a 3-second timeout for the message to disappear and the form to reappear.
+  - Modified color schemes, like the nav bar, from white to grey for better accessibility.
 
 
 
